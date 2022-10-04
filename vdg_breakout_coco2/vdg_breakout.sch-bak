@@ -1,0 +1,389 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "VDG Breakout for RGB to HDMI project"
+Date "2021-05-14"
+Rev "1.0.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Rocky Hill"
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 60A75BE4
+P 5600 3800
+F 0 "J3" H 5650 4117 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 5650 4026 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 5600 3800 50  0001 C CNN
+F 3 "https://s3.amazonaws.com/catalogspreads-pdf/PAGE122%20.100%20SBH11%20SERIES%20MALE%20BOX%20HDR%20ST%20RA%20SMT.pdf" H 5600 3800 50  0001 C CNN
+F 4 "digikey" H 5600 3800 50  0001 C CNN "vendor"
+F 5 "S9716-ND" H 5600 3800 50  0001 C CNN "vendor part#"
+F 6 "SBH11-NBPC-D03-ST-BK" H 5600 3800 50  0001 C CNN "manufacturer part#"
+	1    5600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x20_Counter_Clockwise J1
+U 1 1 60A75F6E
+P 6200 2000
+F 0 "J1" H 6250 3117 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise" H 6200 3250 50  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 6200 2000 50  0001 C CNN
+F 3 "~" H 6200 2000 50  0001 C CNN
+F 4 "socket goes here" H 6250 3050 50  0000 C CNN "text"
+	1    6200 2000
+	1    0    0    -1  
+$EndComp
+Text Label 6000 1100 2    50   ~ 0
+VSS
+$Comp
+L power:+5V #PWR01
+U 1 1 60A9F1B0
+P 2200 1350
+F 0 "#PWR01" H 2200 1200 50  0001 C CNN
+F 1 "+5V" H 2215 1523 50  0000 C CNN
+F 2 "" H 2200 1350 50  0001 C CNN
+F 3 "" H 2200 1350 50  0001 C CNN
+	1    2200 1350
+	1    0    0    -1  
+$EndComp
+Text Label 6000 2700 2    50   ~ 0
+VCC
+Text Label 2450 1250 0    50   ~ 0
+VCC
+Wire Wire Line
+	2200 1350 2200 1700
+Wire Wire Line
+	2200 1700 2450 1700
+Wire Wire Line
+	2450 1700 2450 1250
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 60AA2DB6
+P 1900 1550
+F 0 "#FLG01" H 1900 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 1723 50  0000 C CNN
+F 2 "" H 1900 1550 50  0001 C CNN
+F 3 "~" H 1900 1550 50  0001 C CNN
+	1    1900 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1550 1900 1700
+Wire Wire Line
+	1900 1700 2200 1700
+Connection ~ 2200 1700
+$Comp
+L power:GND #PWR02
+U 1 1 60AA4D7C
+P 1800 3300
+F 0 "#PWR02" H 1800 3050 50  0001 C CNN
+F 1 "GND" H 1805 3127 50  0000 C CNN
+F 2 "" H 1800 3300 50  0001 C CNN
+F 3 "" H 1800 3300 50  0001 C CNN
+	1    1800 3300
+	1    0    0    -1  
+$EndComp
+Text Label 2100 3350 0    50   ~ 0
+VSS
+Wire Wire Line
+	1800 3300 1800 3100
+Wire Wire Line
+	1800 3100 1950 3100
+Wire Wire Line
+	2100 3100 2100 3350
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 60AA6BA7
+P 1950 3000
+F 0 "#FLG02" H 1950 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 3173 50  0000 C CNN
+F 2 "" H 1950 3000 50  0001 C CNN
+F 3 "~" H 1950 3000 50  0001 C CNN
+	1    1950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3000 1950 3100
+Connection ~ 1950 3100
+Wire Wire Line
+	1950 3100 2100 3100
+Text Label 6000 1200 2    50   ~ 0
+DD6
+Text Label 6000 1300 2    50   ~ 0
+DD0
+Text Label 6000 1400 2    50   ~ 0
+DD1
+Text Label 6000 1500 2    50   ~ 0
+DD2
+Text Label 6000 1600 2    50   ~ 0
+DD3
+Text Label 6000 1700 2    50   ~ 0
+DD4
+Text Label 6000 1800 2    50   ~ 0
+DD5
+Text Label 6000 1900 2    50   ~ 0
+CHB
+Text Label 6000 2200 2    50   ~ 0
+~MS
+Text Label 6000 2300 2    50   ~ 0
+DA5
+Text Label 6000 2400 2    50   ~ 0
+DA6
+Text Label 6000 2500 2    50   ~ 0
+DA7
+Text Label 6000 2600 2    50   ~ 0
+DA8
+Text Label 6000 2800 2    50   ~ 0
+DA9
+Text Label 6000 2900 2    50   ~ 0
+DA10
+Text Label 6000 3000 2    50   ~ 0
+DA11
+Text Label 6500 3000 0    50   ~ 0
+DA12
+Text Label 6500 2900 0    50   ~ 0
+DA0
+Text Label 6500 2800 0    50   ~ 0
+DA1
+Text Label 6500 2700 0    50   ~ 0
+DA2
+Text Label 6500 2600 0    50   ~ 0
+DA3
+Text Label 6500 2500 0    50   ~ 0
+DA4
+Text Label 6500 2400 0    50   ~ 0
+GM2
+Text Label 6500 2200 0    50   ~ 0
+GM1
+Text Label 6500 2100 0    50   ~ 0
+GM0
+Text Label 6500 2000 0    50   ~ 0
+~INT~_~EXT
+Text Label 6500 1900 0    50   ~ 0
+INV
+Text Label 6500 1800 0    50   ~ 0
+CLK
+Text Label 6500 1700 0    50   ~ 0
+~A~_S
+Text Label 6500 1600 0    50   ~ 0
+~A~_G
+Text Label 6500 1500 0    50   ~ 0
+~RP
+Text Label 6500 1400 0    50   ~ 0
+~FS
+Text Label 6500 1200 0    50   ~ 0
+CS
+Text Label 6500 1100 0    50   ~ 0
+DD7
+$Comp
+L Connector_Generic:Conn_02x20_Counter_Clockwise J2
+U 1 1 622E6728
+P 4900 2000
+F 0 "J2" H 4950 3117 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise" H 4900 3250 50  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 4900 2000 50  0001 C CNN
+F 3 "~" H 4900 2000 50  0001 C CNN
+F 4 "headers go here" H 4950 3050 50  0000 C CNN "text"
+	1    4900 2000
+	1    0    0    -1  
+$EndComp
+Text Label 5200 1300 0    50   ~ 0
+HS
+Text Label 4700 1100 2    50   ~ 0
+VSS
+Text Label 4700 2000 2    50   ~ 0
+ϴB
+Text Label 5200 2300 0    50   ~ 0
+Y
+Text Label 4700 2100 2    50   ~ 0
+ϴA
+Text Label 4700 2700 2    50   ~ 0
+VCC
+Text Label 4700 1200 2    50   ~ 0
+DD6
+Text Label 4700 1300 2    50   ~ 0
+DD0
+Text Label 4700 1400 2    50   ~ 0
+DD1
+Text Label 4700 1500 2    50   ~ 0
+DD2
+Text Label 4700 1600 2    50   ~ 0
+DD3
+Text Label 4700 1700 2    50   ~ 0
+DD4
+Text Label 4700 1800 2    50   ~ 0
+DD5
+Text Label 4700 1900 2    50   ~ 0
+CHB
+Text Label 4700 2200 2    50   ~ 0
+~MS
+Text Label 4700 2300 2    50   ~ 0
+DA5
+Text Label 4700 2400 2    50   ~ 0
+DA6
+Text Label 4700 2500 2    50   ~ 0
+DA7
+Text Label 4700 2600 2    50   ~ 0
+DA8
+Text Label 4700 2800 2    50   ~ 0
+DA9
+Text Label 4700 2900 2    50   ~ 0
+DA10
+Text Label 4700 3000 2    50   ~ 0
+DA11
+Text Label 5200 3000 0    50   ~ 0
+DA12
+Text Label 5200 2900 0    50   ~ 0
+DA0
+Text Label 5200 2800 0    50   ~ 0
+DA1
+Text Label 5200 2700 0    50   ~ 0
+DA2
+Text Label 5200 2600 0    50   ~ 0
+DA3
+Text Label 5200 2500 0    50   ~ 0
+DA4
+Text Label 5200 2400 0    50   ~ 0
+GM2
+Text Label 5200 2200 0    50   ~ 0
+GM1
+Text Label 5200 2100 0    50   ~ 0
+GM0
+Text Label 5200 2000 0    50   ~ 0
+~INT~_~EXT
+Text Label 5200 1900 0    50   ~ 0
+INV
+Text Label 5200 1800 0    50   ~ 0
+CLK
+Text Label 5200 1700 0    50   ~ 0
+~A~_S
+Text Label 5200 1600 0    50   ~ 0
+~A~_G
+Text Label 5200 1500 0    50   ~ 0
+~RP
+Text Label 5200 1400 0    50   ~ 0
+~FS
+Text Label 5200 1200 0    50   ~ 0
+CS
+Text Label 5200 1100 0    50   ~ 0
+DD7
+Text Label 5400 3700 2    50   ~ 0
+VSS
+Text Label 6000 4450 2    50   ~ 0
+ϴB
+Text Label 6000 4850 2    50   ~ 0
+ϴA
+Text Label 5050 4800 2    50   ~ 0
+HS
+Text Label 6200 3900 0    50   ~ 0
+VCC
+Text Notes 3750 4250 0    50   ~ 0
+BLUE=0B\nRED=0A\nSYNC=HS\nGREEN=Y\n
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 623051F3
+P 6050 3900
+F 0 "JP1" H 6050 3800 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6050 4014 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6050 3900 50  0001 C CNN
+F 3 "~" H 6050 3900 50  0001 C CNN
+	1    6050 3900
+	-1   0    0    -1  
+$EndComp
+Text Label 6500 2300 0    50   ~ 0
+GREEN
+Text Label 5350 4450 0    50   ~ 0
+GREEN
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 623183F8
+P 5200 4450
+F 0 "JP2" H 5200 4250 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5200 4564 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5200 4450 50  0001 C CNN
+F 3 "~" H 5200 4450 50  0001 C CNN
+	1    5200 4450
+	1    0    0    -1  
+$EndComp
+Text Label 5050 4450 2    50   ~ 0
+Y
+Text Label 5900 3800 0    50   ~ 0
+GREEN
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 6233D7DE
+P 6150 4450
+F 0 "JP3" H 6150 4250 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6150 4564 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6150 4450 50  0001 C CNN
+F 3 "~" H 6150 4450 50  0001 C CNN
+	1    6150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 6233DB84
+P 6150 4850
+F 0 "JP5" H 6150 4650 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6150 4964 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6150 4850 50  0001 C CNN
+F 3 "~" H 6150 4850 50  0001 C CNN
+	1    6150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 6233DF64
+P 5200 4800
+F 0 "JP4" H 5200 4600 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5200 4914 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5200 4800 50  0001 C CNN
+F 3 "~" H 5200 4800 50  0001 C CNN
+	1    5200 4800
+	1    0    0    -1  
+$EndComp
+Text Label 6300 4450 0    50   ~ 0
+BLUE
+Text Label 5400 3800 2    50   ~ 0
+BLUE
+Text Label 6300 4850 0    50   ~ 0
+RED
+Text Label 5400 3900 2    50   ~ 0
+RED
+Text Label 5350 4800 0    50   ~ 0
+ASYNC
+Text Label 5900 3700 0    50   ~ 0
+ASYNC
+Text Label 6500 1300 0    50   ~ 0
+ASYNC
+Text Label 6000 2000 2    50   ~ 0
+BLUE
+Text Label 6000 2100 2    50   ~ 0
+RED
+$Comp
+L Device:Jumper_NO_Small JP6
+U 1 1 623C46B2
+P 6050 4150
+F 0 "JP6" H 6050 4050 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 6050 4244 50  0001 C CNN
+F 2 "" H 6050 4150 50  0001 C CNN
+F 3 "~" H 6050 4150 50  0001 C CNN
+	1    6050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3900 5900 4150
+Wire Wire Line
+	5900 4150 5950 4150
+Connection ~ 5900 3900
+Wire Wire Line
+	6200 3900 6200 4150
+Wire Wire Line
+	6200 4150 6150 4150
+$EndSCHEMATC

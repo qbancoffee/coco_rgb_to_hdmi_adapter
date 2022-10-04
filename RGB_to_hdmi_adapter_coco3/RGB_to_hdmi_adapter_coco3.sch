@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 622FB488
+P 4150 2500
+F 0 "J1" H 4200 2167 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4200 2826 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 4150 2500 50  0001 C CNN
+F 3 "https://drawings-pdf.s3.amazonaws.com/11636.pdf" H 4150 2500 50  0001 C CNN
+F 4 "digikey" H 4150 2500 50  0001 C CNN "vendor"
+F 5 "S2011EC-05-ND" H 4150 2500 50  0001 C CNN "vendor part#"
+F 6 "PRPC005DAAN-RC" H 4150 2500 50  0001 C CNN "manufacturer part#"
+	1    4150 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 622FCC7A
+P 4100 2950
+F 0 "#PWR01" H 4100 2700 50  0001 C CNN
+F 1 "GND" H 4105 2777 50  0000 C CNN
+F 2 "" H 4100 2950 50  0001 C CNN
+F 3 "" H 4100 2950 50  0001 C CNN
+	1    4100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2700 4400 2700
+Wire Wire Line
+	4400 2700 4400 2900
+Wire Wire Line
+	4400 2900 4100 2900
+Wire Wire Line
+	4100 2900 4100 2950
+Wire Wire Line
+	3850 2700 3800 2700
+Wire Wire Line
+	3800 2700 3800 2900
+Wire Wire Line
+	3800 2900 4100 2900
+Connection ~ 4100 2900
+Text Label 4350 2300 0    50   ~ 0
+VSYNC
+Text Label 4350 2400 0    50   ~ 0
+SOUND
+Text Label 4350 2500 0    50   ~ 0
+BLUE
+Text Label 4350 2600 0    50   ~ 0
+RED
+Text Label 3850 2400 2    50   ~ 0
+HSYNC
+Text Label 3850 2600 2    50   ~ 0
+GREEN
+NoConn ~ 3850 2500
+Text Label 3850 2300 2    50   ~ 0
+RGB_OUT_10
+$Comp
+L Diode:1N4148 D2
+U 1 1 622FE1B0
+P 5550 3450
+F 0 "D2" H 5550 3350 50  0000 C CNN
+F 1 "1N4148" H 5550 3576 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5550 3275 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5550 3450 50  0001 C CNN
+F 4 "digikey" H 5550 3450 50  0001 C CNN "vendor"
+F 5 "1N4148FS-ND" H 5550 3450 50  0001 C CNN "vendor part#"
+F 6 "1N4148" H 5550 3450 50  0001 C CNN "manufacturer part#"
+	1    5550 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 6230028C
+P 4200 4000
+F 0 "J2" H 4250 3667 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4250 4326 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 4200 4000 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf" H 4200 4000 50  0001 C CNN
+F 4 "digikey" H 4200 4000 50  0001 C CNN "vendor"
+F 5 "S7108-ND" H 4200 4000 50  0001 C CNN "vendor part#"
+F 6 "PPPC052LFBN-RC" H 4200 4000 50  0001 C CNN "manufacturer part#"
+	1    4200 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 62300292
+P 4150 4450
+F 0 "#PWR03" H 4150 4200 50  0001 C CNN
+F 1 "GND" H 4155 4277 50  0000 C CNN
+F 2 "" H 4150 4450 50  0001 C CNN
+F 3 "" H 4150 4450 50  0001 C CNN
+	1    4150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4200 4450 4200
+Wire Wire Line
+	4450 4200 4450 4400
+Wire Wire Line
+	4450 4400 4150 4400
+Wire Wire Line
+	4150 4400 4150 4450
+Wire Wire Line
+	3900 4200 3850 4200
+Wire Wire Line
+	3850 4200 3850 4400
+Wire Wire Line
+	3850 4400 4150 4400
+Connection ~ 4150 4400
+Text Label 4400 3800 0    50   ~ 0
+VSYNC
+Text Label 4400 3900 0    50   ~ 0
+SOUND
+Text Label 4400 4000 0    50   ~ 0
+BLUE
+Text Label 4400 4100 0    50   ~ 0
+RED
+Text Label 3900 3900 2    50   ~ 0
+HSYNC
+Text Label 3900 4100 2    50   ~ 0
+GREEN
+NoConn ~ 3900 4000
+Text Label 3900 3800 2    50   ~ 0
+RGB_OUT_10
+$Comp
+L Diode:1N4148 D1
+U 1 1 623009A4
+P 5550 3100
+F 0 "D1" H 5550 2950 50  0000 C CNN
+F 1 "1N4148" H 5550 3226 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5550 2925 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5550 3100 50  0001 C CNN
+F 4 "digikey" H 5550 3100 50  0001 C CNN "vendor"
+F 5 "1N4148FS-ND" H 5550 3100 50  0001 C CNN "vendor part#"
+F 6 "1N4148" H 5550 3100 50  0001 C CNN "manufacturer part#"
+	1    5550 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 62302086
+P 7100 4050
+F 0 "J3" H 7150 3750 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 7150 4276 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 7100 4050 50  0001 C CNN
+F 3 "https://s3.amazonaws.com/catalogspreads-pdf/PAGE122%20.100%20SBH11%20SERIES%20MALE%20BOX%20HDR%20ST%20RA%20SMT.pdf" H 7100 4050 50  0001 C CNN
+F 4 "digikey" H 7100 4050 50  0001 C CNN "vendor"
+F 5 "S9716-ND" H 7100 4050 50  0001 C CNN "vendor part#"
+F 6 "SBH11-NBPC-D03-ST-BK" H 7100 4050 50  0001 C CNN "manufacturer part#"
+	1    7100 4050
+	-1   0    0    1   
+$EndComp
+Text Label 7300 4050 0    50   ~ 0
+BLUE
+Text Label 7300 3950 0    50   ~ 0
+RED
+Text Label 6800 4050 2    50   ~ 0
+GREEN
+$Comp
+L power:GND #PWR02
+U 1 1 62304A1D
+P 7450 4350
+F 0 "#PWR02" H 7450 4100 50  0001 C CNN
+F 1 "GND" H 7455 4177 50  0000 C CNN
+F 2 "" H 7450 4350 50  0001 C CNN
+F 3 "" H 7450 4350 50  0001 C CNN
+	1    7450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4150 7450 4150
+Wire Wire Line
+	7450 4150 7450 4350
+Text Label 6800 4150 2    50   ~ 0
+ASYNC
+Text Label 5400 3100 2    50   ~ 0
+VSYNC
+Text Label 5400 3450 2    50   ~ 0
+HSYNC
+Text Label 6000 3300 0    50   ~ 0
+ASYNC
+Wire Wire Line
+	5700 3100 5900 3100
+Wire Wire Line
+	5900 3100 5900 3300
+Wire Wire Line
+	5900 3300 6000 3300
+Wire Wire Line
+	5900 3450 5900 3300
+Connection ~ 5900 3300
+Wire Wire Line
+	5700 3450 5900 3450
+NoConn ~ 6800 3950
+$EndSCHEMATC
